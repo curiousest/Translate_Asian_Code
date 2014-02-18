@@ -200,7 +200,10 @@ var/
 sdist/
 develop-eggs/
 .installed.cfg
-/ENV
+ENV/
+venv/
+SourceFiles/
+DestFiles/
 
 # Installer logs
 pip-log.txt
