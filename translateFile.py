@@ -9,6 +9,12 @@ Email: dmhindson[at]gmail.com
 import sys
 import lib.gtranslate.gtranslate
 
+def to_unicode_or_bust(
+        obj, encoding='utf-8'):
+    if isinstance(obj, basestring):
+        if not isinstance(obj, unicode):
+            obj = unicode(obj, encoding)
+    return obj
 
 def translateFile(filename, lin='zh_CN', lout='en'):
     """
